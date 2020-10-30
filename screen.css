@@ -3,16 +3,16 @@
    License: none (public domain)
 */
 /* stylelint-enable */
-html, header, main, footer, aside, 
-ul, li, h4, p  
+html, header, main, footer, a,
+ul, li, h1, h3, h4, p, figure, figcaption, img, nav, div, video
 /* stylelint-disable */
 span, applet, object, iframe, abbr, acronym, u, blockquote, pre,
-address, big, cite, code, del, dfn, em, ins, kbd, h3, h5, h6, h1, h2,
-q, s, samp, small, strike, strong, sub, sup, tt, var, figure, figcaption,
-center, dl, dt, dd, ol, fieldset, form, label, legend,  a,
+address, big, cite, code, del, dfn, em, ins, kbd, h6, h2, h5,
+q, s, samp, small, strike, strong, sub, sup, tt, var, 
+center, dl, dt, dd, ol, fieldset, form, label, legend,  
 table, caption, tbody, tfoot, thead, tr, th, td, canvas, 
-details, embed, hgroup, menu, output, ruby, section, img,
-summary, time, mark, audio, video, div, body, b, i, nav, article
+details, embed, hgroup, menu, output, ruby, section, 
+summary, time, mark, audio, body, b, i, article, aside, 
 
 
 /* Site styles show as below */
@@ -26,6 +26,7 @@ html {
 body {
     padding: 2rem;
     height: 100%;
+    width: 100%;
     margin: 0;
 }
 header {
@@ -43,7 +44,7 @@ footer {
     position: relative;
     margin-top: -2rem;
     margin-bottom: 1rem;
-    padding-top: 2rem;
+    padding-top: 1rem;
     height: 2rem;
     clear: both;
     text-align: center;
@@ -54,6 +55,30 @@ h1 {
 h3 {
     font-size: 1.75rem;
 }
+
+h4 {
+    font-size: 1.25rem;
+    margin: 1rem 0;
+}
+.title {
+    border-style: inset;
+}
+.button {
+    border-style: solid;
+    border-color: #00cc66;
+    color: #00cc66;
+    padding: 1rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 0.25rem .125rem;
+}
+.button:hover {
+    background-color: #00cc66;
+    color: white;
+}
+
 /* project index page */
 #author {
     font-style: italic;
@@ -66,26 +91,26 @@ h3 {
 .resume a,
 .amateur a,
 .pets a {
-    width: 33.33%;
+    width: 100%;
     display: block;
     font-size: 1.25rem;
     text-decoration: none;
     padding: .75rem;
 }
-.resume a{
+.resume a {
     background: #94b8b8;
-}
-.amateur a{
-    background: #d8bfd8;
-}
-.pets a{
-    background: #ffcc99;
 }
 .resume a:hover {
     background-color: #527a7a;
 }
+.amateur a {
+    background: #d8bfd8;
+}
 .amateur a:hover {
     background-color: #8e578e;
+}
+.pets a {
+    background: #ffcc99;
 }
 .pets a:hover {
     background-color: #b35900;
@@ -94,20 +119,7 @@ h3 {
 .amateur a:hover,
 .pets a:hover {
     color: white;
-}
-@media screen and (min-width: 21rem) {
-    .nav::after {
-        content: "";
-        display: block;
-        clear: both;
-        float: none;
-        width: 100%;
-    }
-    .nav li {
-        float: left;
-        width: 100%;
-    }
-}
+} 
 
 /* resume page */
 #name {
@@ -118,11 +130,26 @@ h3 {
     margin-top: 0;
 }
 .item {
-    margin-right: 0;
+    margin: 0;
     display: block; 
 }
 .content {
     display: block;
+}
+.experience,
+.time,
+.location,
+.achievement {
+    margin: 0;
+}
+.organization,
+.experience {
+    margin: 0.5rem 0;
+}
+.task {
+    margin: 0.5rem 0;
+    font-size: 0.75rem;
+    font-weight: lighter;
 }
 .skill,
 .software,
@@ -134,7 +161,7 @@ h3 {
 .software li,
 .exam li {
     display: inline-block;
-    margin-top: 2%;
+    margin-top: 0.5rem;
     margin-left: 0;
     font-size: 0.75rem;
     text-align: center;
@@ -151,10 +178,6 @@ h3 {
 }
 
 @media screen and (min-width: 48rem) {
-    .item {
-        margin-right: 1.75rem;
-        display: inline-block; 
-    }
     .content {
         display: flex;
         justify-content: space-between;
@@ -169,6 +192,110 @@ h3 {
         display: flex;
         justify-content: space-between;
     }
+}
+@media screen and (min-width: 36rem){
+    .item {
+        width: 32.5%;
+        display: inline-flex;
+    }
+}
+
+/* amateur page */
+#amateur {
+    border-color: #d8bfd8;
+}
+.left,
+.right {
+    width: 100%
+}
+figure {
+    width: 100%;
+    margin: 1rem 0;
+    float: left;
+}
+figcaption {
+    text-align: center;
+    padding: 0.5rem 0
+}
+figure img {
+    display: block;
+    width: 100%;
+}
+@media screen and (min-width: 36rem){
+    #cooking p,
+    #cooking h3,
+    #cooking figcaption {
+        background: #ffcc99;
+    }
+    #kpop p,
+    #kpop h3,
+    #kpop figcaption {
+        background-color: #66ccff;
+    }
+}
+
+/* pets page */
+#pets {
+    border-color: #ffcc99;
+}
+.bottom {
+    width: 100%;
+}
+.bottom img {
+    width: 100%;
+}
+.pet {
+    margin-bottom: 1rem;
+}
+video {
+    width: 22rem;
+    height: 30rem;
+}
+
+@media screen and (min-width: 36rem){
+    #grid {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-columns: 20rem 20rem 20rem 20rem;
+    }
+    #huey {
+        grid-area: 1/1/2/3;
+    }
+    #maui {
+        grid-area: 1/3/2/5;
+    }
+    #together {
+        grid-area: 2/1/3/5;    
+    }
+    #fight {
+        grid-area: 3/1/4/5;
+    }
+    #huey img,
+    #maui img {
+        width: 80%;
+    }
+    #together img, 
+    #fight img {
+        width: 45%;
+    }
+    .pic {
+        display: flex;
+        justify-content: space-between;
+    }
+    .video {
+        display: flex;
+        justify-content: space-between;
+    }
+    video {
+        width: 38.125rem;
+        height: 50rem;
+    }
+}
+
+
+
+
+
 
 
 

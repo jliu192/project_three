@@ -34,7 +34,7 @@ header {
 }
 main {
     min-height: 100%;
-    padding-bottom: -2rem;
+    padding-bottom: 2rem;
     padding-left: 1rem;
     padding-right: 1rem;
     margin-bottom: 2rem;

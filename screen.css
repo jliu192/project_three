@@ -25,22 +25,19 @@ html {
 }
 body {
     padding: 2rem;
-    height: 100%;
-    width: 100%;
+    height: auto;
+    width: auto;
     margin: 0;
 }
 header {
     padding: 1rem;
 }
 main {
-    min-height: 100%;
-    padding-bottom: 2rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 0 1rem 2rem 1rem;
     margin-bottom: 2rem;
 }
 footer {
-    width: 100%;
+    width: auto;
     position: relative;
     margin-top: -2rem;
     margin-bottom: 1rem;
@@ -83,6 +80,9 @@ h4 {
 #author {
     font-style: italic;
 }
+.nav{
+    padding-left: 0;
+}
 .nav li {
     list-style-type: none;
     padding-bottom: 2rem;
@@ -91,7 +91,6 @@ h4 {
 .resume a,
 .amateur a,
 .pets a {
-    width: 100%;
     display: block;
     font-size: 1.25rem;
     text-decoration: none;
@@ -121,7 +120,18 @@ h4 {
     color: white;
 } 
 
+@media screen and (min-width: 48rem) {
+    .resume a,
+    .amateur a,
+    .pets a {
+        width: 250%;
+    }
+}
+
 /* resume page */
+header {
+    padding-top: 0;
+}
 #name {
     margin-top: 0;
 }
@@ -248,15 +258,14 @@ figure img {
     margin-bottom: 1rem;
 }
 video {
-    width: 22rem;
-    height: 30rem;
+    width: 18rem;
+    height: 25rem;
 }
 
 @media screen and (min-width: 36rem){
     #grid {
         display: grid;
         grid-template-columns: 25% 25% 25% 25%;
-        grid-template-columns: 20rem 20rem 20rem 20rem;
     }
     #huey {
         grid-area: 1/1/2/3;
@@ -276,19 +285,20 @@ video {
     }
     #together img, 
     #fight img {
-        width: 45%;
+        width: 40%;
     }
-    .pic {
-        display: flex;
-        justify-content: space-between;
-    }
+    .pic,
     .video {
+
         display: flex;
         justify-content: space-between;
+
     }
     video {
-        width: 38.125rem;
+        width: 38.15rem;
         height: 50rem;
+        display: flex;
+        justify-content: space-between;
     }
 }
 

@@ -25,8 +25,6 @@ html {
 }
 body {
     padding: 2rem;
-    height: auto;
-    width: auto;
     margin: 0;
 }
 header {
@@ -37,7 +35,6 @@ main {
     margin-bottom: 2rem;
 }
 footer {
-    width: auto;
     position: relative;
     margin-top: -2rem;
     margin-bottom: 1rem;
@@ -214,12 +211,7 @@ header {
 #amateur {
     border-color: #d8bfd8;
 }
-.left,
-.right {
-    width: 100%
-}
 figure {
-    width: 100%;
     margin: 1rem 0;
     float: left;
 }
@@ -247,9 +239,6 @@ figure img {
 /* pets page */
 #pets {
     border-color: #ffcc99;
-}
-.bottom {
-    width: 100%;
 }
 .bottom img {
     width: 100%;

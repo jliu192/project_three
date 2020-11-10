@@ -112,7 +112,7 @@ h4 {
         width: 30%;
     }
     .middle {
-        margin: 0 3%;
+        margin: 0 4%;
     }
 }
 
@@ -162,6 +162,14 @@ h4 {
 } 
 
 @media screen and (min-width: 36rem) {
+    .resume a,
+    .amateur a,
+    .pets a {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 48rem) {
     .resume a,
     .amateur a,
     .pets a {

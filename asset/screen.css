@@ -4,10 +4,10 @@
 */
 /* stylelint-enable */
 html, header, main, footer, a,
-ul, li, h1, h3, h4, p, figure, figcaption, img, nav, div, video
+ul, li, h1, h2, h3, h4, p, figure, figcaption, img, nav, div, video
 /* stylelint-disable */
 span, applet, object, iframe, abbr, acronym, u, blockquote, pre,
-address, big, cite, code, del, dfn, em, ins, kbd, h6, h2, h5,
+address, big, cite, code, del, dfn, em, ins, kbd, h6, h5,
 q, s, samp, small, strike, strong, sub, sup, tt, var, 
 center, dl, dt, dd, ol, fieldset, form, label, legend,  
 table, caption, tbody, tfoot, thead, tr, th, td, canvas, 
@@ -28,7 +28,8 @@ body {
     margin: 0;
 }
 header {
-    padding: 0 1rem 1rem 1rem;
+    padding: 0 1rem;
+    margin-bottom: ;
 }
 main {
     padding: 0 1rem 2rem 1rem;
@@ -129,11 +130,13 @@ h4 {
     padding-bottom: 2rem;
     text-align: center;
 }
+.nav a{
+    font-size: 1.25rem;
+}
 .resume a,
 .amateur a,
 .pets a {
     display: block;
-    font-size: 1.25rem;
     text-decoration: none;
     padding: .75rem;
 }
@@ -178,11 +181,12 @@ h4 {
 }
 
 /* resume page */
-header {
-    padding-top: 0;
+#resume {
+    border-color: #527a7a;
 }
 #name {
-    margin-top: 2rem;
+    margin: 1rem 0;
+    font-size: 2rem;
 }
 #job {
     font-weight: lighter;

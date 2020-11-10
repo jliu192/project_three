@@ -28,7 +28,7 @@ body {
     margin: 0;
 }
 header {
-    padding: 1rem;
+    padding: 0 1rem 1rem 1rem;
 }
 main {
     padding: 0 1rem 2rem 1rem;
@@ -56,6 +56,26 @@ h4 {
 .title {
     border-style: inset;
 }
+.header_link {
+    padding-bottom: 2rem;
+}
+.link_left,
+.link_right {
+    display: inline-flex;
+    text-decoration: none;
+    border-style: solid;
+    padding: 0.5rem 1rem;
+}
+.link_left {
+    float: left;
+    color: indianred;
+    border-color: indianred;
+}
+.link_right {
+    float: right;
+    color: turquoise;
+    border-color: turquoise;
+}
 .button {
     border-style: solid;
     border-color: #00cc66;
@@ -69,8 +89,19 @@ h4 {
 }
 .button:hover {
     background-color: #00cc66;
+}
+.link_right:hover {
+    background-color: turquoise;
+}
+.link_left:hover {
+    background-color: indianred;
+}
+.button:hover,
+.link_left:hover,
+.link_right:hover {
     color: white;
 }
+
 
 /* project index page */
 #author {
@@ -129,7 +160,7 @@ header {
     padding-top: 0;
 }
 #name {
-    margin-top: 0;
+    margin-top: 2rem;
 }
 #job {
     font-weight: lighter;
@@ -194,15 +225,15 @@ header {
     .right {
         margin-left: 5rem;
     }
-    .stamp {
-        display: flex;
-        justify-content: space-between;
-    }
 }
 @media screen and (min-width: 36rem){
     .item {
         width: 32.5%;
         display: inline-flex;
+    }
+    .stamp {
+        display: flex;
+        justify-content: space-between;
     }
 }
 
@@ -224,9 +255,9 @@ figcaption {
 }
 figure img {
     display: block;
-    width: 100%;
+    max-width: 100%;
 }
-@media screen and (min-width: 36rem){
+@media screen and (min-width: 48rem){
     #cooking p,
     #cooking h3,
     #cooking figcaption {
@@ -244,17 +275,18 @@ figure img {
     border-color: #ffcc99;
 }
 .bottom img {
-    width: 100%;
+    max-width: 100%;
 }
 .pet {
     margin-bottom: 1rem;
 }
 video {
-    width: 18rem;
-    height: 25rem;
+    max-width: 100%;
+    height: auto;
 }
 
-@media screen and (min-width: 36rem){
+
+@media screen and (min-width: 48rem){
     #grid {
         display: grid;
         grid-template-columns: 25% 25% 25% 25%;
@@ -273,11 +305,15 @@ video {
     }
     #huey img,
     #maui img {
-        width: 80%;
+        max-width: 80%;
     }
     #together img, 
     #fight img {
-        width: 40%;
+        max-width: 40%;
+    }
+    #maui,
+    #huey p{
+        max-width: 80%;
     }
     .pic,
     .video {
@@ -285,8 +321,8 @@ video {
         justify-content: space-between;
     }
     video {
-        width: 38.15rem;
-        height: 50rem;
+        max-width: 40%;
+        height: auto;
         display: flex;
         justify-content: space-between;
     }

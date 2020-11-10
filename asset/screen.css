@@ -1,0 +1,363 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* stylelint-enable */
+html, header, main, footer, a,
+ul, li, h1, h3, h4, p, figure, figcaption, img, nav, div, video
+/* stylelint-disable */
+span, applet, object, iframe, abbr, acronym, u, blockquote, pre,
+address, big, cite, code, del, dfn, em, ins, kbd, h6, h2, h5,
+q, s, samp, small, strike, strong, sub, sup, tt, var, 
+center, dl, dt, dd, ol, fieldset, form, label, legend,  
+table, caption, tbody, tfoot, thead, tr, th, td, canvas, 
+details, embed, hgroup, menu, output, ruby, section, 
+summary, time, mark, audio, body, b, i, article, aside, 
+
+
+/* Site styles show as below */
+/* Base Styles */
+html {
+    background: #ffffff;
+    color: #222;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+body {
+    padding: 2rem;
+    margin: 0;
+}
+header {
+    padding: 0 1rem 1rem 1rem;
+}
+main {
+    padding: 0 1rem 2rem 1rem;
+    margin-bottom: 2rem;
+}
+footer {
+    position: relative;
+    margin-top: -2rem;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+    height: 2rem;
+    clear: both;
+    text-align: center;
+}
+h1 {
+    font-size: 2.5rem;  
+}
+h3 {
+    font-size: 1.75rem;
+}
+h4 {
+    font-size: 1.25rem;
+    margin: 1rem 0;
+}
+.title {
+    border-style: inset;
+}
+.header_link {
+    padding: 1rem 0;
+}
+.header_link li {
+    list-style-type: none;
+    text-align: center;
+}
+.resume_active a{
+    color: #527a7a;
+}
+.amateur_active a{
+    color: #8e578e;
+}
+.pets_active a{
+    color: #b35900;
+}
+.resume_active a,
+.amateur_active a,
+.pets_active a {
+    background-color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    padding: .75rem;
+    display: block;
+}
+.button {
+    border-style: solid;
+    border-color: #00cc66;
+    color: #00cc66;
+    padding: 1rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 0.25rem .125rem;
+}
+.button:hover {
+    background-color: #00cc66;
+    color: white;
+}
+
+@media screen and (min-width: 36rem) {
+    .resume_active a,
+    .amateur_active a,
+    .pets_active a {
+        width: 250%;
+        font-weight: bolder;
+    }
+    .header_link li {
+        display: inline-flex;
+        justify-content: space-between;
+        text-align: center;
+        list-style-type: none;
+        width: 30%;
+    }
+    .middle {
+        margin: 0 3%;
+    }
+}
+
+
+/* project index page */
+#author {
+    font-style: italic;
+}
+.nav{
+    padding-left: 0;
+}
+.nav li {
+    list-style-type: none;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+.resume a,
+.amateur a,
+.pets a {
+    display: block;
+    font-size: 1.25rem;
+    text-decoration: none;
+    padding: .75rem;
+}
+.resume a {
+    background: #94b8b8;
+}
+.resume a:hover {
+    background-color: #527a7a;
+}
+.amateur a {
+    background: #d8bfd8;
+}
+.amateur a:hover {
+    background-color: #8e578e;
+}
+.pets a {
+    background: #ffcc99;
+}
+.pets a:hover {
+    background-color: #b35900;
+}
+.resume a:hover,
+.amateur a:hover,
+.pets a:hover {
+    color: white;
+} 
+
+@media screen and (min-width: 36rem) {
+    .resume a,
+    .amateur a,
+    .pets a {
+        width: 250%;
+    }
+}
+
+/* resume page */
+header {
+    padding-top: 0;
+}
+#name {
+    margin-top: 2rem;
+}
+#job {
+    font-weight: lighter;
+    margin-top: 0;
+}
+.item {
+    margin: 0;
+    display: block; 
+}
+.content {
+    display: block;
+}
+.experience,
+.time,
+.location,
+.achievement {
+    margin: 0;
+}
+.organization,
+.experience {
+    margin: 0.5rem 0;
+}
+.task {
+    margin: 0.5rem 0;
+    font-size: 0.75rem;
+    font-weight: lighter;
+}
+.skill,
+.software,
+.exam {
+    list-style-type: none; 
+    padding: 0;
+}
+.skill li,
+.software li,
+.exam li {
+    display: inline-block;
+    margin-top: 0.5rem;
+    margin-left: 0;
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 0.3rem;
+    border: #737373;
+    border-radius: 0.25rem;
+    background-color: #737373;
+    color: white
+}
+.skill li,
+.software li,
+.exam li {
+    margin-right: 5%;
+}
+
+@media screen and (min-width: 48rem) {
+    .content {
+        display: flex;
+        justify-content: space-between;
+    } 
+    .left {
+        margin-right: 5rem;
+    }
+    .right {
+        margin-left: 5rem;
+    }
+}
+@media screen and (min-width: 36rem){
+    .item {
+        margin: auto;
+        width: 32%;
+        display: inline-block;
+        text-align: center;
+    }
+    .stamp {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+/* amateur page */
+#amateur {
+    border-color: #d8bfd8;
+}
+.left,
+.right {
+    width: 100%;
+}
+figure {
+    margin: 1rem 0;
+    float: left;
+}
+figcaption {
+    text-align: center;
+    padding: 0.5rem 0
+}
+figure img {
+    display: block;
+    max-width: 100%;
+}
+@media screen and (min-width: 48rem){
+    #cooking p,
+    #cooking h3,
+    #cooking figcaption {
+        background: #ffcc99;
+    }
+    #kpop p,
+    #kpop h3,
+    #kpop figcaption {
+        background-color: #66ccff;
+    }
+}
+
+/* pets page */
+#pets {
+    border-color: #ffcc99;
+}
+.bottom img {
+    max-width: 100%;
+}
+.pet {
+    margin-bottom: 1rem;
+}
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+
+@media screen and (min-width: 48rem){
+    #grid {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+    #huey {
+        grid-area: 1/1/2/3;
+    }
+    #maui {
+        grid-area: 1/3/2/5;
+    }
+    #together {
+        grid-area: 2/1/3/5;    
+    }
+    #fight {
+        grid-area: 3/1/4/5;
+    }
+    #huey img,
+    #maui img {
+        max-width: 80%;
+    }
+    #together img, 
+    #fight img {
+        max-width: 40%;
+    }
+    #maui,
+    #huey p{
+        max-width: 80%;
+    }
+    .pic,
+    .video {
+        display: flex;
+        justify-content: space-between;
+    }
+    video {
+        max-width: 40%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+

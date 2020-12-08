@@ -240,15 +240,32 @@ h4 {
 }
 
 @media screen and (min-width: 48rem) {
-    .content {
-        display: flex;
-        justify-content: space-between;
+    .resume_content {
+        display: grid;
+        grid-template-columns: 50% 45%;
+        grid-template-rows: repeat(11, 7%);
+        column-gap: 5%;
     } 
-    .left {
-        margin-right: 5rem;
+    #work_experience {
+        grid-area: 1/1/7/2;
     }
-    .right {
-        margin-left: 5rem;
+    #education {
+        grid-area: 7/1/11/2;
+    }
+    #actuarial_exams {
+        grid-area: 11/1/12/2;
+    }
+    #skills {
+        grid-area: 1/2/2/3;
+    }
+    #additional_activities{
+        grid-area: 2/2/8/3;
+    }
+    #language {
+        grid-area: 8/2/11/3;
+    }
+    #software{
+        grid-area: 11/2/12/3;
     }
 }
 @media screen and (min-width: 36rem){
@@ -314,7 +331,7 @@ video {
 
 
 @media screen and (min-width: 48rem){
-    #grid {
+    #pet_grid {
         display: grid;
         grid-template-columns: 25% 25% 25% 25%;
     }

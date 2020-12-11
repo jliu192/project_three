@@ -18,6 +18,7 @@ summary, time, mark, audio, body, b, i, article, aside,
 /* Site styles show as below */
 /* Base Styles */
 html {
+    color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem; /*16/16=1*/
 }
@@ -60,6 +61,9 @@ h4 {
 .header_link li {
     list-style-type: none;
     text-align: center;
+}
+.content {
+    display: flex;
 }
 .resume_active a{
     color: #527a7a;
@@ -193,9 +197,6 @@ h4 {
     margin: 0;
     display: block; 
 }
-.content {
-    display: block;
-}
 .experience,
 .time,
 .location,
@@ -287,19 +288,30 @@ h4 {
 .right {
     width: 100%;
 }
-figure {
-    margin: 1rem 0;
-    float: left;
-}
-figcaption {
-    text-align: center;
-    padding: 0.5rem 0
-}
-figure img {
+.amateur_figure img {
     display: block;
     max-width: 100%;
 }
+.amateur_figure {
+    position: relative;
+    margin: 1rem 0;
+    float: none;
+}
+.amateur_figcaption {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem 0;
+    color: white;
+    background-color: black;
+}
 @media screen and (min-width: 48rem){
+    .amateur_content {
+        display: grid;
+        grid-template-columns: 45% 45%;
+        column-gap: 10%;
+    }
     #cooking p,
     #cooking h3,
     #cooking figcaption {
@@ -310,34 +322,41 @@ figure img {
     #kpop figcaption {
         background-color: #66ccff;
     }
+    .amateur_figcaption {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        color: black;
+    }
 }
 
 /* pets page */
 #pets {
     border-color: #ffcc99;
 }
-.bottom img {
+#pet_grid img{
+    display: block;
     max-width: 100%;
-}
-.pet {
+} 
+.pet img {
     margin-bottom: 1rem;
-}  
+} 
 .tmi li {
     text-align: left;
+    color: white;
 }
 #huey figure,
 #maui figure {
     position: relative;
     margin: 0;
     float: none;
-
 }
-
 #huey figcaption,
 #maui figcaption {
     position: absolute;
     bottom: 0;
     width: 100%;
+    text-align: center;
     background-color: #000;
     color: #FFF;
 }
@@ -352,7 +371,7 @@ video {
     #pet_grid {
         display: grid;
         grid-template-columns: 25% 25% 25% 25%;
-        row-gap: 1.5%;
+        row-gap: 0.5%;
     }
     #huey {
         grid-area: 1/1/2/3;

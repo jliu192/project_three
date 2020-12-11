@@ -334,60 +334,12 @@ h4 {
 #pets {
     border-color: #ffcc99;
 }
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-.bottom img {
-=======
 #pet_grid img{
     display: block;
->>>>>>> 3f467afef976d7dfd83444ff8a1e0a84ab6fa4f3
     max-width: 100%;
 } 
-.pet img {
-    margin-bottom: 1rem;
-} 
-.tmi li {
-    text-align: left;
-    color: white;
-}
-#huey figure,
-#maui figure {
-    position: relative;
-    margin: 0;
-    float: none;
-<<<<<<< HEAD
-
-=======
-.pets_content {
-    display: block;
-}
-#huey figure,
-#maui figure,
-#together figure,
-#fight figure {
-    float: left;
-} 
-#huey figure img,
-#maui figure img,
-#together img,
-#fight img{
-    display: block;
-    max-width: 100%;
-    margin: 1rem 0;
->>>>>>> Stashed changes
-=======
->>>>>>> 3f467afef976d7dfd83444ff8a1e0a84ab6fa4f3
-}
 #huey figcaption,
 #maui figcaption {
-<<<<<<< Updated upstream
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    background-color: #000;
-    color: #FFF;
-=======
 position: relative;
 bottom: 0;
 width: 100%;
@@ -398,7 +350,6 @@ color: #FFF;
 .tmi li {
     text-align: left;
     color: white;
->>>>>>> Stashed changes
 }
 video {
     max-width: 100%;

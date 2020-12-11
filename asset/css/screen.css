@@ -337,6 +337,7 @@ h4 {
 #pet_grid img{
     display: block;
     max-width: 100%;
+    margin: 1rem 0;
 } 
 #huey figcaption,
 #maui figcaption {
